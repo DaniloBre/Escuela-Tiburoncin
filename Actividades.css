@@ -1,0 +1,172 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-image: url(./Imagenes2/fondoagua.jpg);
+}
+
+h1{
+    margin: 10px;
+    padding: 10pxs;
+    background-color: rgb(185, 255, 115);
+    text-align: center;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+
+}
+main{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(127, 255, 212, 0.300);
+}
+h2{
+    margin: 10px;
+    padding: 10px;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+h3{
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+img{
+    width: 300px;
+    height: 200px;
+}
+p{
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+/*Estilos*/
+.clas{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+li{    
+    margin: 15px;
+    padding: 10px;
+    width: 500px;
+    border: 5px violet solid;
+    display: inline-block;
+}
+
+.crol{
+    background-color: royalblue;
+    display: inline block;
+}
+.crol p{
+    background-color: rgb(106, 134, 219);
+}
+.espa{
+    background-color: darkorange;
+    display: inline block;
+}
+.espa p{
+    background-color: rgb(255, 175, 78);
+}
+.pech{
+    background-color: firebrick;
+    display: inline block;
+}
+.pech p{
+    background-color: rgb(199, 78, 78);
+}
+.mari{
+    background-color: darkgreen;
+    display: inline block;
+}
+.mari p{
+    background-color: rgb(60, 160, 60);
+}
+/*fin estilos*/
+
+
+/*Evento pile*/
+.comp{
+    background-color: orangered;
+    display: inline block;
+}
+.comp p{
+    background-color: rgb(255, 144, 104);
+}
+.supe{
+    background-color: indianred;
+    display: inline block;
+}
+.supe p{
+    background-color: rgb(241, 135, 135);    
+}
+.fies{
+    background-color: rgb(0, 100, 139);
+    display: inline block;
+}
+.fies p{
+    background-color: rgb(48, 147, 187);
+}
+.padr{
+    background-color: forestgreen;
+    display: inline block;
+}
+.padr p{
+    background-color: rgb(81, 201, 81);
+}
+/*Fin evento pile*/
+
+
+/*Evento relacionado*/
+.exte{
+    background-color: yellowgreen;
+    display: inline block;
+}
+.exte p{
+    background-color: rgb(214, 253, 135);
+}
+.rio{
+    background-color: darkslateblue;
+    display: inline block;
+}
+.rio p{
+    background-color: rgb(126, 115, 199);
+    
+}
+.mar{
+    background-color: tomato;
+    display: inline block;
+}
+.mar p{
+    background-color: rgb(255, 152, 134);
+}
+.lago{
+    background-color: darkcyan;
+    display: inline block;
+}
+.lago p{
+    background-color: rgb(56, 211, 211);
+}
+/*Fin evento relacionado*/
+
+
+/*Footer*/
+footer{
+    background-color: black;
+    margin: 10px;
+    padding: 10px;
+}
+footer p{
+    color: wheat;
+    margin: 10px;
+    padding: 10px;
+}
+footer a{
+    margin: 10px;
+    background-color: rgb(157, 231, 83);
+    padding: 10px;
+    border-radius: 15%;
+}
+footer a:hover{
+    background-color: rgb(71, 163, 71);
+    border-radius: 30%;
+}
+/*Fin footer*/

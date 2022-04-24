@@ -1,0 +1,67 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-image: url(./Imagenes2/fondoagua.jpg);
+}
+h1{
+    margin: 10px;
+    margin-bottom: 0%;
+    padding: 10px;
+    background-color: yellowgreen;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+h2{
+    margin: 10px;
+    margin-top: 0%;
+    padding: 10px;
+    background-color: yellowgreen;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+main{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(127, 255, 212, 0.63);
+}
+img{
+    display: block;
+    margin: 10px;
+    padding: 10px;
+}
+a{
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+p{
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/*Footer*/
+footer{
+    background-color: black;
+    margin: 10px;
+    padding: 10px;
+}
+footer p{
+    color: wheat;
+    margin: 10px;
+    padding: 10px;
+}
+footer a{
+    margin: 10px;
+    background-color: rgb(157, 231, 83);
+    padding: 10px;
+    border-radius: 15%;
+}
+footer a:hover{
+    background-color: rgb(71, 163, 71);
+    border-radius: 30%;
+}
+/*Fin footer*/

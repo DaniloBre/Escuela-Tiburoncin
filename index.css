@@ -1,0 +1,150 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-image: url(./Imagenes2/fondoagua.jpg);
+    width: 100%;
+    height: 80vh;
+    margin: 10px auto;
+
+    
+}
+
+
+h1{
+    text-align: center;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+h2, h3{
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+p{
+    font-family: 'Roboto Mono', monospace;
+}
+/*Encabezado*/
+
+#tibu{
+    grid-area: logo;
+}
+#arriba{
+    grid-area: titu;
+}
+/*Fin de encabezado*/
+
+/*Menu*/
+.menu{
+    list-style-type: none;
+    margin: 10px;
+    height: 55px;
+    background-color: rgba(194, 123, 230, 0.692);
+    text-align: center;
+    position: relative;
+    grid-area: menu;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    background-color: rgb(157, 231, 83);
+    padding: 10px;
+    border-radius: 15%;
+    position: sticky;
+}
+menu li a{
+    text-decoration: none;
+    display: inline-block;
+}
+.menu li:hover{
+    background-color: rgb(71, 163, 71);
+    border-radius: 30%;
+}
+.menu li a:hover{
+    color: wheat;
+}
+/*Menu*/
+
+/*Section1*/
+.section1{
+    background-color: rgba(110, 160, 161, 0.801);
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.section1 h3{
+    margin: 10px;
+    padding: 10px;
+}
+.section1 p{
+    margin: 10px;
+    padding: 10px;
+}
+/*Fin section1*/
+
+
+/*Lista*/
+ul{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(128, 255, 0, 0.568);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2) 1fr;
+    grid-template-areas: 
+    "invi vera" "colo nent";
+    gap: 10px color;
+}
+
+ul li{
+    margin: 10px;
+    padding: 10px;    
+}
+/*Fin lista*/
+
+/*Section2*/
+.section2{
+    background-color: darkseagreen;
+    margin: 10px;
+    padding: 10px;
+}
+.section2 h3{
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+.section2 p{
+    margin-top: 0px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.section2 img{
+    width: 300px;
+    height: 200px;
+}
+/*Fin section2*/
+
+/*Footer*/
+.foot{
+    background-color: black;
+    margin: 10px;
+    padding: 10px;
+}
+.foot p{
+    color: wheat;
+    margin: 10px;
+    padding: 10px;
+}
+.foot a{
+    margin: 10px;
+    background-color: rgb(157, 231, 83);
+    padding: 10px;
+    border-radius: 15%;
+}
+.foot a:hover{
+    background-color: rgb(71, 163, 71);
+    border-radius: 30%;
+}
+/*Fin footer*/

@@ -1,0 +1,147 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-image: url(./Imagenes2/fondoagua.jpg);
+
+    width: 100%;
+    height: 80vh;
+
+}
+
+
+h1{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(185, 255, 115);
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+h2{
+    margin: 10px;
+    padding: 10px;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+main{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(127, 255, 212, 0.555);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2) 1fr;
+    grid-template-areas: 
+    "section section"
+    "inve vera"
+    "colo equi";
+}
+
+section{
+    margin: 10px;
+    padding: 10px;
+    grid-area: section;
+}
+
+p{
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Roboto Mono', monospace;
+}
+a{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(157, 231, 83);
+    border-radius: 15%;
+}
+a:hover{
+    background-color: rgb(71, 163, 71);
+    border-radius: 30%;
+}
+
+form{
+    margin: 10px;
+    padding: 10px;
+}
+fieldset{
+    margin: 10px;
+    padding: 10px;
+}
+legend{
+    margin: 10px;
+    padding: 10px;
+}
+div{
+    margin: 10px;
+    padding: 10px;
+}
+h3{
+    margin: 10px;
+    padding: 10px;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+div input{
+    margin: 5px;
+    padding: 5px;
+}
+
+.dia{
+    display: block;
+}
+
+.in{
+    display: block;
+}
+
+.comt{
+    display: block;
+}
+.bot{
+    margin: 10px;
+    padding: 10px;
+}
+
+/*Espacio de formularios*/
+.inve{
+    background-color: darkcyan;
+    grid-area: inve;
+}
+.vera{
+    background-color: darkkhaki;
+    grid-area: vera;
+}
+.colo{
+    background-color: darksalmon;
+    grid-area: colo;
+}
+.equi{
+    background-color: rgb(209, 87, 87);
+    grid-area: equi;
+}
+/*Fin de espacio de formularios*/
+
+
+/*Footer*/
+footer{
+    background-color: black;
+    margin: 10px;
+    padding: 10px;
+}
+footer p{
+    color: wheat;
+    margin: 10px;
+    padding: 10px;
+}
+footer a{
+    margin: 10px;
+    background-color: rgb(157, 231, 83);
+    padding: 10px;
+    border-radius: 15%;
+}
+footer a:hover{
+    background-color: rgb(71, 163, 71);
+    border-radius: 30%;
+}
+/*Fin footer*/
+

@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./Imagenes2/ENTlogo.ico">
+
+    <link rel="stylesheet" href="./MesesDiasyHorarios.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@500&family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <title>Claces de natacion</title>
+</head>
+<body>
+    <header>
+        <h1>Eliga su mes, dia y horario de preferencia!!!</h1>
+
+    </header>
+
+    <main>
+        <!--Exlicacion de cmo funciona la inscripcion-->
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum ipsum veniam perspiciatis accusamus enim quidem. Quis quos quibusdam sint voluptas magnam natus ipsam cupiditate. Quidem, quam perspiciatis. Iste, necessitatibus alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sed praesentium rem harum ratione! Impedit nemo sit minus veritatis dignissimos mollitia, fugiat rem odio distinctio perferendis excepturi labore, inventore sequi.</p>
+            <a href="/Desafio1/index2.html">Volver a pagina principal</a>
+        </section>
+        <!--Exlicacion de cmo funciona la inscripcion-->
+
+
+        <!--Invierno-->
+        <section class="inve">
+            <h2>Formulario de invierno</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia nemo magnam eaque sapiente. Perferendis eligendi minima fugit, ea consequatur aliquid blanditiis officiis, commodi vitae dicta vel et, natus ullam id.</p>
+            <form action="">
+                <fieldset>
+                    <legend>Formulario de pileta de invierno</legend>
+                    <!--Informacion primordial-->
+                    <div>
+                        <label for="nombre">Escribe tu nombre</label>
+                        <input type="text" nombre="nombre">
+                    </div>
+                    <div>
+                        <label for="apellido">Escribe tu apellido</label>
+                        <input type="text" nombre="apellido">
+                    </div>
+                    <div>
+                        <label for="edad">Fecha de nacimiento</label>
+                        <input type="text" nombre="fecha de nacimiento">
+                    </div>
+                    <div>
+                        <label for="telefono">Escrive tu numero de telefono</label>
+                        <input type="text" nombre="numero telefonico">
+                    </div>
+                    <div>
+                        <label for="email">Escrube tu email *</label>
+                        <input type="email" nombre="escribe tu email" required>
+                    </div>
+                    <div>
+                        <label for="nivel">Nivel de conocimiento</label>
+                        <select name="nivel" id="">
+                            <option value="principiante">Principiante</option>
+                            <option value="intermedio">Intermedio</option>
+                            <option value="conocedor">Conocedor</option>
+                            <option value="avansado">Avansado</option>
+                        </select>
+                    </div>
+                    <!--Fin de informacion primordial-->
+                    
+                    
+                    <!--Seleccion de pileta-->
+                    <h3>Sede</h3>
+                    <div>
+                        <label for="Sede">Selecione a la cede que decea asistir</label>
+                        <select name="Mes de inicio" id="">
+                            <option value="Abr">Sede N°1</option>
+                            <option value="Jun">Sede n°2</option>
+                            <option value="Jul">Sede N°3</option>
+                        </select>
+                    </div>
+                    <!--Fin de seleccion de pileta-->
+                    
+
+                    <!--Seleccion de meses-->
+                    <h3>Meses</h3>
+                    <div>
+                        <label for="Mes de inicio">Seleccione el mes que decea inicar</label>
+                        <select name="Mes de inicio" id="">
+                            <option value="Abr">Abril</option>
+                            <option value="Jun">Junio</option>
+                            <option value="Jul">Julio</option>
+                            <option value="Ago">Agosto</option>
+                            <option value="Sept">Septiembre</option>
+                            <option value="Mar">Octubre</option>
+                        </select>
+                    </div>
+            
+                    <div>
+                        <label for="Mes final">Seleccione el mes que desea terminar</label>
+                        <select name="Mes de inicio" id="">
+                            <option value="Abr">Abril</option>
+                            <option value="Jun">Junio</option>
+                            <option value="Jul">Julio</option>
+                            <option value="Ago">Agosto</option>
+                            <option value="Sept">Septiembre</option>
+                            <option value="Mar">Octubre</option>
+                        </select>
+                    </div> 
+                    <!--Fin de seleccion de meses-->  
+                    
+
+                    <!--Seleccion de dias-->  
+                    <h3>Dias</h3>
+                    <div class="dia">
+                        <section>
+                        <label for="dia">Selecciona el dia que deceas realisar la calce de nado</label>
+                        </section>
+                        <input type="radio" name="dia" value="Lunes">Lunes
+                        <input type="radio" name="dia" value="Martes">Martes
+                        <input type="radio" name="dia" value="Miercoles">Miercoles
+                        <input type="radio" name="dia" value="Jueves">Jueves
+                        <input type="radio" name="dia" value="Viernes">Viernes
+                        <input type="radio" name="dia" value="Savado">Savado
+                    </div>
+                    <!--Fin de seleccion de dias-->
+                    
+
+                    <!--Seleccion de horarios-->
+                    <h3>Horarios</h3>
+                    <div>
+                        <label for="Hoario">Horarios matutinos</label>
+                        <select name="horario" id="">
+                            <option value="horario">Ninguno</option>
+                            <option value="horario">08hs-09hs</option>
+                            <option value="horario">09hs-10hs</option>
+                            <option value="horario">10hs-11hs</option>
+                            <option value="horario">11hs-12hs</option>
+                        </select>
+
+                        <label for="Horario">Horarios de tarde</label>
+                        <select name="horario" id="">
+                            <option value="horario">Ninguno</option>
+                            <option value="horario">12hs-13hs</option>
+                            <option value="horario">13hs-14hs</option>
+                            <option value="horario">14hs-15hs</option>
+                            <option value="horario">15hs-16hs</option>
+                            <option value="horario">16hs-17hs</option>
+                            <option value="horario">17hs-18hs</option>
+                            <option value="horario">18hs-19hs</option>
+                            <option value="horario">19hs-20hs</option>
+                            <option value="horario">20hs-21hs</option>
+                            <option value="horario">21hs-22hs</option>
+                        </select>
+                    </div>
+                    <!--Fin de seleccion de horarios-->
+                    
+                    
+                    <!--Comentario-->
+                    <h3>Comentarios</h3>
+                    <div class="comt">
+                        <section>
+                        <label for="Comentario">Deja tu Comentario</label>
+                        </section>
+                        <textarea name="comentario" id="" cols="60" rows="10" placeholder="Si tubo algun experiencia previa con la natacion nos gustaria saver de que forma"></textarea>
+                    </div>
+                    <!--Fin de comentario-->
+                    
+                        
+                </fieldset>
+
+                <!--Botones-->
+                <input class="bot" type="submit" value="Enviar dato">
+                <input class="bot" type="reset" value="Borrar dato">
+                <!--Fin de botones-->
+
+            </form>
+        </section>
+        <!--fin de invieno-->
+
+
+
+        <!--Verano-->
+        <section class="vera">
+            <h2>Formulario de verano</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla perspiciatis dignissimos porro tempora temporibus, quisquam quibusdam, laboriosam aliquam hic quidem itaque aspernatur, reprehenderit in molestias repellendus ullam natus tenetur.</p>
+            <form action="">
+                <fieldset>
+                    <legend>Formulario pileta de verano</legend>
+                    <!--Informacion primordial-->
+                    <div>
+                        <label for="nombre">Escribe tu nombre</label>
+                        <input type="text" nombre="nombre">
+                    </div>
+                    <div>
+                        <label for="apellido">Escribe tu apellido</label>
+                        <input type="text" nombre="apellido">
+                    </div>
+                    <div>
+                        <label for="edad">Fecha de nacimiento</label>
+                        <input type="text" nombre="apellido">
+                    </div>
+                    <div>
+                        <label for="telefono">Escrive tu numero de telefono</label>
+                        <input type="text" nombre="numero telefonico">
+                    </div>
+                    <div>
+                        <label for="email">Escrube tu email *</label>
+                        <input type="email" nombre="escribe tu email" required>
+                    </div>
+                    <div>
+                        <label for="nivel">Nivel de conocimiento</label>
+                        <select name="nivel" id="">
+                            <option value="principiante">Principiante</option>
+                            <option value="intermedio">Intermedio</option>
+                            <option value="conocedor">Conocedor</option>
+                            <option value="avansado">Avansado</option>
+                        </select>
+                    </div>
+                    <!--Fin de informacion primordial-->
+                    
+                    
+                    <!--Seleccion de pileta-->
+                    <h3>Sede</h3>
+                    <div>
+                        <label for="Sede">Selecione a la cede que decea asistir</label>
+                        <select name="Mes de inicio" id="">
+                            <option value="Abr">Sede N°1</option>
+                            <option value="Jun">Sede n°2</option>
+                            <option value="Jul">Sede N°3</option>
+                        </select>
+                    </div>
+                    <!--Fin de seleccion de pileta-->
+
+
+                    <!--Seleccion de meses-->
+                    <h3>Meses</h3>
+                    <div>
+                        <label for="Mes de inicio">Seleccione el mes que decea inicar</label>
+                        <select name="Mes de inicio" id="">
+                            <option value="Nov">Noviembre</option>
+                            <option value="Dic">Diciembre</option>
+                            <option value="Ene">Enero</option>
+                            <option value="Feb">Febrero</option>
+                            <option value="Mar">Marzo</option>
+                        </select>
+                    </div>
+                    
+
+                    <div>
+                        <label for="Mes final">Seleccione el mes que desea terminar</label>
+                        <select name="Mes de inicio" id="">
+                            <option value="Nov">Noviembre</option>
+                            <option value="Dic">Diciembre</option>
+                            <option value="Ene">Enero</option>
+                            <option value="Fev">Febrero</option>
+                            <option value="Mar">Marzo</option>
+                        </select>
+                    </div>
+                    <!--Fin de seleccion de meses-->
+
+
+                    <!--Seleccion de dias-->
+                    <h3>Dias</h3>
+                    <div class="dia">
+                        <section>
+                        <label for="dia">Selecciona el dia que deceas realisar la calce de nado</label>
+                        </section>
+                        <input type="radio" name="dia" value="Lunes">Lunes
+                        <input type="radio" name="dia" value="Martes">Martes
+                        <input type="radio" name="dia" value="Miercoles">Miercoles
+                        <input type="radio" name="dia" value="Jueves">Jueves
+                        <input type="radio" name="dia" value="Viernes">Viernes
+                        <input type="radio" name="dia" value="Savado">Savado
+                    </div>
+                    <!--Fin de seleccion de dias-->
+
+                    
+                    <!--Seleccion de horarios-->
+                    <h3>Horarios</h3>
+                    <div>
+                        <label for="Hoario">Horarios matutinos</label>
+                        <select name="horario" id="">
+                            <option value="horario">Ninguno</option>
+                            <option value="horario">08hs-09hs</option>
+                            <option value="horario">09hs-10hs</option>
+                            <option value="horario">10hs-11hs</option>
+                            <option value="horario">11hs-12hs</option>
+                        </select>
+
+                        <label for="Horario">Horarios de tarde</label>
+                        <select name="horario" id="">
+                            <option value="horario">Ninguno</option>
+                            <option value="horario">12hs-13hs</option>
+                            <option value="horario">17hs-18hs</option>
+                            <option value="horario">18hs-19hs</option>
+                            <option value="horario">19hs-20hs</option>
+                            <option value="horario">20hs-21hs</option>
+                            <option value="horario">21hs-22hs</option>
+                        </select>
+                    </div>
+                    <!--Fin de seleccion de horarios-->
+
+                    
+                    <!--Comentarios-->
+                    <h3>Comentarios</h3>
+                    <div class="comt">
+                        <section>
+                            <label for="Comentario">Deja tu Comentario</label>
+                        </section>
+                        <textarea name="comentario" id="" cols="60" rows="10" placeholder="Si tubo algun experiencia previa con la natacion nos gustaria saver de que forma"></textarea>
+                    </div>
+                    <!--Fin de comentarios-->
+            
+                </fieldset>
+
+                    <!--Boton-->
+                    <input class="bot" type="submit" value="Enviar dato">
+                    <input class="bot" type="reset" value="Borrar dato">
+                    <!--Fin de boton-->
+
+            </form>
+        </section>
+        <!--Fin de verano-->
+
+
+
+        <!--Colonia-->
+        <section class="colo">
+            <h2>Formularo de colonia</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ut a saepe eum tempore laborum nulla veniam sint, architecto qui aut vitae fuga inventore. Rem quaerat modi voluptas quos doloribus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt fugit asperiores cumque iste architecto distinctio harum minima, facere quibusdam odio ullam dolor a. In aut tenetur porro quam necessitatibus laborum?</p>
+            <form action="">
+                <fieldset>
+                    <!--Informacion primordial-->
+                    <legend>Formulario Colonia</legend>
+                    <div>
+                        <label for="nombre">Nombre del tutor</label>
+                        <input type="text" nombre="nombre">
+                    </div>
+                    <div>
+                        <label for="nombre">Escribe tu nombre</label>
+                        <input type="text" nombre="nombre">
+                    </div>
+                    <div>
+                        <label for="apellido">Escribe tu apellido</label>
+                        <input type="text" nombre="apellido">
+                    </div>
+                    <div>
+                        <label for="edad">Fecha de nacimiento</label>
+                        <input type="text" nombre="apellido">
+                    </div>
+                    <div>
+                        <label for="telefono">Escrive tu numero de telefono</label>
+                        <input type="text" nombre="numero telefonico">
+                    </div>
+                    <div>
+                        <label for="email">Escrube tu email *</label>
+                        <input type="email" nombre="escribe tu email" required>
+                    </div>
+                    <div>
+                        <label for="nivel">Nivel de conocimiento</label>
+                        <select name="nivel" id="">
+                            <option value="principiante">Principiante</option>
+                            <option value="intermedio">Intermedio</option>
+                            <option value="conocedor">Conocedor</option>
+                            <option value="avansado">Avansado</option>
+                        </select>
+                    </div>
+                    <!--Fin de informacion primordial-->
+
+
+                    <!--Seleccion de pileta-->
+                    <h3>Sede</h3>
+                    <div>
+                        <label for="Sede">Selecione a la cede que decea asistir</label>
+                        <select name="Mes de inicio" id="">
+                            <option value="Abr">Sede N°1</option>
+                            <option value="Jun">Sede n°2</option>
+                            <option value="Jul">Sede N°3</option>
+                        </select>
+                    </div>
+                    <!--Fin de seleccion de pileta-->
+
+
+                    <!--Seleccion de meses-->
+                    <h3>Meses</h3>
+                    <div>
+                        <label for="Mes de inicio">Seleccione el mes que decea inicar</label>
+                        <select name="Mes de inicio" id="">
+                            <option value="Nov">Noviembre</option>
+                            <option value="Dic">Diciembre</option>
+                            <option value="Ene">Enero</option>
+                            <option value="Feb">Febrero</option>
+                            <option value="Mar">Marzo</option>
+                        </select>
+                    </div>
+            
+                    <div>
+                        <label for="Mes final">Seleccione el mes que desea terminar</label>
+                        <select name="Mes de inicio" id="">
+                            <option value="Nov">Noviembre</option>
+                            <option value="Dic">Diciembre</option>
+                            <option value="Ene">Enero</option>
+                            <option value="Fev">Febrero</option>
+                            <option value="Mar">Marzo</option>
+                        </select>
+                    </div>
+                    <!--Fin de seleccion de meses-->
+                    
+
+                    <!--Comentario-->
+                    <h3>Comentarios</h3>
+                    <div class="comt">
+                        <section>
+                        <label for="Comentario">Deja tu Comentario</label>
+                        </section>
+                        <textarea name="comentario" id="" cols="60" rows="10" placeholder="Si tubo algun experiencia previa con la natacion nos gustaria saver de que forma"></textarea>
+                    </div>
+                    <!--Fin de comentario-->
+                    
+                </fieldset>
+
+                <!--Boton-->
+                <input class="bot" type="submit" value="Enviar dato">
+                <input class="bot" type="reset" value="Borrar dato">
+                <!--Fin de boton-->
+
+            </form>
+        </section>
+
+        <!--Fin de colonia-->
+
+
+
+        <!--Equipo-->
+        <section class="equi">
+            <h2>Formularo de equipo</h2>
+            <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad commodi quidem ea ab, velit tempore voluptas vitae rem repellat quam assumenda a exercitationem! Nihil neque doloremque delectus tempora similique unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor maiores fugit culpa, pariatur provident facere, omnis recusandae quasi excepturi facilis reiciendis placeat error perspiciatis dolorem repellat reprehenderit eligendi vero explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illum, modi distinctio quae et nihil facere error, eaque tempora ea quam, possimus maxime vel! Nam, accusamus dicta! Molestiae, error quis?</P>
+            <form action="">
+                <fieldset>
+                    <legend>Formulario de equipo cometitivo</legend>
+                    <!--Informacion primordial-->
+                    <div>
+                        <label for="nombre">Nombre del tutor</label>
+                        <input type="text" nombre="nombre">
+                    </div>
+                    <div>
+                        <label for="nombre">Escribe tu nombre</label>
+                        <input type="text" nombre="nombre">
+                    </div>
+                    <div>
+                        <label for="apellido">Escribe tu apellido</label>
+                        <input type="text" nombre="apellido">
+                    </div>
+                    <div>
+                        <label for="edad">Fecha de nacimiento</label>
+                        <input type="text" nombre="apellido">
+                    </div>
+                    <div>
+                        <label for="telefono">Escrive tu numero de telefono</label>
+                        <input type="text" nombre="numero telefonico">
+                    </div>
+                    <div>
+                        <label for="email">Escrube tu email *</label>
+                        <input type="email" nombre="escribe tu email" required>
+                    </div>
+                    <div>
+                        <label for="nivel">Nivel de conocimiento</label>
+                        <select name="nivel" id="">
+                            <option value="principiante">Principiante</option>
+                            <option value="intermedio">Intermedio</option>
+                            <option value="conocedor">Conocedor</option>
+                            <option value="avansado">Avansado</option>
+                        </select>
+                    </div>
+                    <!--Fin de informacion primordial-->
+
+
+                    <!--Seleccion de pileta-->
+                    <h3>Sede</h3>
+                    <div>
+                        <label for="Sede">Selecione a la cede que decea asistir</label>
+                        <select name="Mes de inicio" id="">
+                            <option value="Abr">Sede N°1</option>
+                            <option value="Jun">Sede n°2</option>
+                            <option value="Jul">Sede N°3</option>
+                        </select>
+                    </div>
+                    <!--Fin de seleccion de pileta-->
+
+
+                    <!--Seleccion de meses-->
+                    <h3>Meses</h3>
+                    <div>
+                        <label for="Mes de inicio">Seleccione el mes que decea inicar</label>
+                        <select name="Mes de inicio" id="">
+                            <option value="Abr">Abril</option>
+                            <option value="May">Mayo</option>
+                            <option value="Jun">Junio</option>
+                            <option value="Jul">Julio</option>
+                            <option value="Ago">Agosto</option>
+                            <option value="Sept">Septiembre</option>
+                            <option value="Mar">Octubre</option>
+                            <option value="Nov">Noviembre</option>
+                            <option value="Dic">Diciembre</option>
+                            <option value="Ene">Enero</option>
+                            <option value="Feb">Febrero</option>
+                            <option value="Mar">Marzo</option>
+                        </select>
+                    </div>
+            
+                    <div>
+                        <label for="Mes final">Seleccione el mes que desea terminar</label>
+                        <select name="Mes de inicio" id="">
+                            <option value="Abr">Abril</option>
+                            <option value="May">Mayo</option>
+                            <option value="Jun">Junio</option>
+                            <option value="Jul">Julio</option>
+                            <option value="Ago">Agosto</option>
+                            <option value="Sept">Septiembre</option>
+                            <option value="Mar">Octubre</option>
+                            <option value="Nov">Noviembre</option>
+                            <option value="Dic">Diciembre</option>
+                            <option value="Ene">Enero</option>
+                            <option value="Fev">Febrero</option>
+                            <option value="Mar">Marzo</option>
+                        </select>
+                    </div>
+                    <!--Fin de seleccion de meses-->
+
+
+                    <!--Comentario-->
+                    <h3>Comentarios</h3>
+                    <div class="comt">
+                        <section>
+                            <label for="Comentario">Deja tu Comentario</label>
+                        </section>
+                        <textarea name="comentario" id="" cols="60" rows="10" placeholder="Si tubo algun experiencia previa con la natacion nos gustaria saver de que forma"></textarea>
+                    </div>
+                    <!--Fin de comentario-->
+          
+                </fieldset>
+
+                <!--Boton-->
+                <input class="bot" type="submit" value="Enviar dato">
+                <input class="bot" type="reset" value="Borrar dato">
+                <!--Fin de boton-->
+                
+            </form>
+        </section>
+        <!--Fin equipo-->
+
+
+    </main>
+
+    <footer>
+        <p>Gracias por completar el fomulario y elejirnos para apender natacion.
+        En vreves le enviaremos un email para confirmar su solicitud</p>
+        <a href="/Desafio1/index2.html">Volver a la pagina principal</a>
+    </footer>
+
+
+    
+</body>
+</html>
