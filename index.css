@@ -19,9 +19,13 @@ h1{
 h2, h3{
     font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
+h2{
+    margin: 15px;
+}
 
 p{
     font-family: 'Roboto Mono', monospace;
+    margin: 15px;
 }
 /*Encabezado*/
 
@@ -39,9 +43,24 @@ p{
     margin: 10px;
     height: 55px;
     background-color: rgba(194, 123, 230, 0.692);
-    text-align: center;
-    position: relative;
-    grid-area: menu;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "sede insc cont busq"
+}
+
+.sede{
+    grid-area: sede;
+}
+.insc{
+    grid-area: insc;
+}
+.cont{
+    grid-area: cont;
+}
+.busq{
+    grid-area: busq;
 }
 .menu li{
     display: inline-block;
@@ -100,7 +119,8 @@ ul{
 
 ul li{
     margin: 10px;
-    padding: 10px;    
+    padding: 10px;
+        
 }
 
 .invi{
