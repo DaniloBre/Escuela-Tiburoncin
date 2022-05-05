@@ -95,9 +95,7 @@ ul{
     grid-template-rows: repeat(1, 1fr) ;
     grid-template-areas: 
     "invi vera" 
-    "colo entr";
-    gap: 10px color;
-    
+    "colo entr";    
 }
 
 ul li{
@@ -119,27 +117,121 @@ ul li{
 }
 /*Fin lista*/
 
-/*Section2*/
-.section2{
-    background-color: darkseagreen;
+
+/*Estilos*/
+.clas{
     margin: 10px;
     padding: 10px;
+    text-align: center;
 }
-.section2 h3{
-    margin: 10px;
-    padding: 10px;
-    margin-bottom: 0px;
-}
-.section2 p{
-    margin-top: 0px;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-.section2 img{
+.clas img{
     width: 300px;
     height: 200px;
 }
-/*Fin section2*/
+.clas li{    
+    margin: 15px;
+    padding: 10px;
+    width: 500px;
+    border: 5px violet solid;
+    display: inline-block;
+}
+
+.crol{
+    background-color: royalblue;
+    display: inline block;
+}
+.crol p{
+    background-color: rgb(106, 134, 219);
+}
+
+.espa{
+    background-color: darkorange;
+    display: inline block;
+}
+.espa p{
+    background-color: rgb(255, 175, 78);
+}
+.pech{
+    background-color: firebrick;
+    display: inline block;
+}
+.pech p{
+    background-color: rgb(199, 78, 78);
+}
+.mari{
+    background-color: darkgreen;
+    display: inline block;
+}
+.mari p{
+    background-color: rgb(60, 160, 60);
+}
+/*fin estilos*/
+
+
+/*Evento pile*/
+.comp{
+    background-color: orangered;
+    display: inline block;
+}
+.comp p{
+    background-color: rgb(255, 144, 104);
+}
+.supe{
+    background-color: indianred;
+    display: inline block;
+}
+.supe p{
+    background-color: rgb(241, 135, 135);    
+}
+.fies{
+    background-color: rgb(0, 100, 139);
+    display: inline block;
+}
+.fies p{
+    background-color: rgb(48, 147, 187);
+}
+.padr{
+    background-color: forestgreen;
+    display: inline block;
+}
+.padr p{
+    background-color: rgb(81, 201, 81);
+}
+/*Fin evento pile*/
+
+
+/*Evento relacionado*/
+.exte{
+    background-color: yellowgreen;
+    display: inline block;
+}
+.exte p{
+    background-color: rgb(214, 253, 135);
+}
+.rio{
+    background-color: darkslateblue;
+    display: inline block;
+}
+.rio p{
+    background-color: rgb(126, 115, 199);
+    
+}
+.mar{
+    background-color: tomato;
+    display: inline block;
+}
+.mar p{
+    background-color: rgb(255, 152, 134);
+}
+.lago{
+    background-color: darkcyan;
+    display: inline block;
+}
+.lago p{
+    background-color: rgb(56, 211, 211);
+}
+/*Fin evento relacionado*/
+
 
 /*Footer*/
 .foot{
