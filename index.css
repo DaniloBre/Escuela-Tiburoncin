@@ -8,9 +8,7 @@ body{
     height: 80vh;
     margin: 10px auto;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat();
+
 }
 
 
@@ -92,11 +90,32 @@ ul{
     padding: 10px;
     background-color: rgba(128, 255, 0, 0.568);
 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1, 1fr) ;
+    grid-template-areas: 
+    "invi vera" 
+    "colo entr";
+    gap: 10px color;
+    
 }
 
 ul li{
     margin: 10px;
     padding: 10px;    
+}
+
+.invi{
+    grid-area: invi;
+}
+.vera{
+    grid-area: vera;
+}
+.colo{
+    grid-area: colo;
+}
+.entr{
+    grid-area: entr;
 }
 /*Fin lista*/
 
