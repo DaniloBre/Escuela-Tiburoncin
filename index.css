@@ -92,12 +92,6 @@ ul{
     padding: 10px;
     background-color: rgba(128, 255, 0, 0.568);
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2) 1fr;
-    grid-template-areas: 
-    "invi vera" "colo nent";
-    gap: 10px color;
 }
 
 ul li{
