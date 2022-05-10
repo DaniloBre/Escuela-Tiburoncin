@@ -14,9 +14,7 @@ body{
 
 
 h1{
-    text-align: center;
     font-family: 'IBM Plex Sans Arabic', sans-serif;
-    margin: 10px;
 }
 h2, h3{
     font-family: 'IBM Plex Sans Arabic', sans-serif;
@@ -40,112 +38,177 @@ p{
 /*Fin de encabezado*/
 
 /*Menu*/
-
-nav{
-    list-style-type: none;
-    margin: 0px;
+/*decorados*/
+header{
     height: 80px;
     background-color: rgba(184, 96, 228, 0.692);
+
+    display: flex;
+    justify-content: space-between;
     
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
 }
-nav img{
+.deco{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+header #logo{
     width: 60px;
+    height: 60px;
+    margin: 10px;
     left: 20px;
+    
 }
 
-nav ul li{
-    display: inline-block;
-    text-align: center;
-    margin: 5px;
-    background-color: rgb(157, 231, 83);
-    padding: 5px;
-    border-radius: 15%;
-    position: sticky;
+.Titulo{
+    margin: 20px;
 }
-nav ul li a{
-    text-decoration: none;
-    display: inline-block;
-    text-transform: uppercase;
-}
-nav ul li:hover{
-    background-color: rgb(71, 163, 71);
-    border-radius: 30%;
-}
-nav ul li a:hover{
-    color: wheat;
-}
-.barra{
-    margin: 15px;
+/*fin de decorados*/
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
-.busq{
-    margin: 5px;
-}
-
-.checkbtn{
-    font-size: 30px;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
+/*Hamburgesa*/
 #check{
     display: none;
 }
 
-@media (max-width: 858px){
-    .checkbtn{
-        display: block;
+.checkbtn #hambur{
+    display: none;
+    width: 60px;
+    height: 60px;
+    
+    
+}
+
+.checkbtn #hambur:hover{
+    cursor: pointer;
+    background-color: rgba(166, 46, 226, 0.692);
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+}
+/*fin de hamburgesa*/
+
+
+/*menu*/
+.barra{
+    list-style-type: none;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    margin: 12.5px;
+}
+
+
+.barra .busq{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.barra input{
+    width: 200px;
+    height: 20px;
+}
+
+.barra ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.barra li a{
+    display: block;
+    margin: 1px;
+    padding: 20px;
+    height: 15px;
+    background-color: rgb(157, 231, 83);
+    text-decoration: none;
+    border-radius: 5%;   
+}
+
+.menu li a:hover{
+    background-color: rgb(128, 221, 35);
+    border-left: solid 1px rgba(184, 96, 228, 0.692);
+    border-right: solid 1px rgba(184, 96, 228, 0.692);
+    border-radius: 10px;
+}
+/*fin de menu*/
+
+
+@media (max-width: 768px){
+    /*decorados*/
+    header{
+        height: 70px;
+        background-color: rgba(184, 96, 228, 0.692);
+        
+        display: flex;
+        justify-content: space-between;
     }
-    ul{
+
+    header #logo{
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        left: 10px;
+    }
+    /*fin de decorados*/
+    
+    /*hamburgesa*/
+    .hamburgesa{
+        margin-right: 10px;
+    }
+    .checkbtn #hambur{
+        display: inline;
+        width: 45px;
+        height: 45px;
+        margin-top: 15px;
+    }
+    .checkbtn #hambur:hover{
+        display: inline;
+        width: 45px;
+        height: 45px;
+        margin-top: 15px;
+    }
+
+    /*fin de hamburgesa*/
+
+    /*menu*/
+    .barra{
         position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: rgba(208, 155, 235, 0.856);
-        left: -100%;
+        width: 270px;
+        left: -285px;
+        top: 300px;
+        background-color: rgba(184, 96, 228, 0.692);
         text-align: center;
-        transition: all .5s;
+
+        display: flex;
+        flex-direction: column-reverse;
+        
     }
-    .busq input{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
+
+    .barra .busq{
+        margin: 10px ;
+        background-color: rgba(184, 96, 228, 0.692);
     }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-        background-color: rgb(157, 231, 83);
+    
+    .barra ul{
+        background-color: rgba(184, 96, 228, 0.692);
+        flex-direction: column;
     }
-    nav ul li a{
-        font-size: 20px;
+    
+    .barra li a{
+        margin: 5px;
     }
-    li a:hover, li a.inic{
-        background: none;
-        color: chartreuse;
+    
+    #hambur:checked ~ .barra{
+        left: 0px;
+
     }
-    .busq:hover, .busq{
-        background: none;
-    }
-    #check:checked ~ ul, .busq{
-        left:0;
-    }
+    /*fin de menu*/
+    
 }   
-/*Menu*/
 
 /*Section1*/
 .section1{
@@ -163,6 +226,15 @@ nav ul li a:hover{
     margin: 10px;
     padding: 10px;
 }
+
+@media (max-width: 768px){
+    .section1 h3{
+        font-size: 18px;
+    }
+    .section1 p{
+        font-size: 12px;
+    }
+}
 /*Fin section1*/
 
 
@@ -172,31 +244,36 @@ nav ul li a:hover{
     padding: 10px;
     background-color: rgba(128, 255, 0, 0.568);
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(1, 1fr) ;
-    grid-template-areas: 
-    "invi vera" 
-    "colo entr";    
+    display: flex;
+    flex-direction: column;   
 }
 
-.info ul li{
+.info2{
+    display: flex;
     margin: 10px;
     padding: 10px;
-        
+}
+.info3{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
 }
 
-.invi{
-    grid-area: invi;
-}
-.vera{
-    grid-area: vera;
-}
-.colo{
-    grid-area: colo;
-}
-.entr{
-    grid-area: entr;
+@media (max-width: 768px){
+    .info h3{
+        font-size: 18px;
+    }
+    .info p{
+        font-size: 12px;
+    }
+    .info2{
+        display: flex;
+        flex-direction: column;
+    }
+    .info3{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /*Fin lista*/
@@ -253,6 +330,22 @@ nav ul li a:hover{
 .mari p{
     background-color: rgb(60, 160, 60);
 }
+
+@media (max-width: 768px){
+    .section2 h2{
+        font-size: 24px;
+    }
+    .section2 h3{
+        font-size: 18px;
+    }
+    .section2 p{
+        font-size: 12px;
+    }
+    .section2 img{
+        width: 250px;
+        height: 150px;
+    }
+}
 /*fin estilos*/
 
 
@@ -288,6 +381,22 @@ nav ul li a:hover{
 }
 .padr p{
     background-color: rgb(81, 201, 81);
+}
+
+@media (max-width: 768px){
+    .section3 h2{
+        font-size: 24px;
+    }
+    .section3 h3{
+        font-size: 18px;
+    }
+    .section3 p{
+        font-size: 12px;
+    }
+    .section3 img{
+        width: 250px;
+        height: 150px;
+    }
 }
 /*Fin evento pile*/
 
@@ -326,6 +435,22 @@ nav ul li a:hover{
 .lago p{
     background-color: rgb(56, 211, 211);
 }
+
+@media (max-width: 768px){
+    .section4 h2{
+        font-size: 24px;
+    }
+    .section4 h3{
+        font-size: 18px;
+    }
+    .section4 p{
+        font-size: 12px;
+    }
+    .section4 img{
+        width: 250px;
+        height: 150px;
+    }
+}
 /*Fin evento relacionado*/
 
 
@@ -349,5 +474,11 @@ nav ul li a:hover{
 .foot a:hover{
     background-color: rgb(71, 163, 71);
     border-radius: 30%;
+}
+
+@media (max-width: 768px){
+    footer p, a{
+        font-size: 12px;
+    }
 }
 /*Fin footer*/
