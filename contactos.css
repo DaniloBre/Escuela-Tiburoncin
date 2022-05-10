@@ -43,6 +43,11 @@ p{
     font-family: 'Roboto Mono', monospace;
 }
 
+div{
+    display: flex;
+    flex-direction: row;
+}
+
 /*Footer*/
 footer{
     background-color: black;
@@ -63,5 +68,14 @@ footer a{
 footer a:hover{
     background-color: rgb(71, 163, 71);
     border-radius: 30%;
+}
+
+@media (max-width: 768px){
+    footer p, a{
+        font-size: 12px;
+    }
+    footer p, a{
+        font-size: 8px;
+    }
 }
 /*Fin footer*/

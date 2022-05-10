@@ -11,7 +11,8 @@ body{
 }
 
 
-h1{
+
+.elija{
     margin: 10px;
     padding: 10px;
     background-color: rgb(185, 255, 115);
@@ -142,6 +143,15 @@ footer a{
 footer a:hover{
     background-color: rgb(71, 163, 71);
     border-radius: 30%;
+}
+
+@media (max-width: 768px){
+    footer p, a{
+        font-size: 12px;
+    }
+    footer p, a{
+        font-size: 8px;
+    }
 }
 /*Fin footer*/
 
