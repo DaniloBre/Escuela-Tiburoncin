@@ -23,6 +23,17 @@ h2{
     margin: 15px;
 }
 
+@media (max-width:768px) {
+    h2{
+        font-size: 18px;
+    }
+}
+@media (max-width:320px) {
+    h2{
+        font-size: 12px;
+    }
+}
+
 p{
     font-family: 'Roboto Mono', monospace;
     margin: 15px;
@@ -153,6 +164,9 @@ header #logo{
         margin: 10px;
         left: 10px;
     }
+    header .Titulo{
+        font-size: 15px;
+    }
     /*fin de decorados*/
     
     /*hamburgesa*/
@@ -169,6 +183,82 @@ header #logo{
         display: inline;
         width: 45px;
         height: 45px;
+        margin-top: 15px;
+    }
+
+    /*fin de hamburgesa*/
+
+    /*menu*/
+    .barra{
+        position: fixed;
+        width: 270px;
+        left: -285px;
+        top: 300px;
+        background-color: rgba(184, 96, 228, 0.692);
+        text-align: center;
+
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+
+    .barra .busq{
+        margin: 10px ;
+        background-color: rgba(184, 96, 228, 0.692);
+    }
+    
+    .barra ul{
+        background-color: rgba(184, 96, 228, 0.692);
+        flex-direction: column;
+    }
+    
+    .barra li a{
+        margin: 5px;
+    }
+    
+    #hambur:checked ~ .barra{
+        left: 0px;
+
+    }
+    /*fin de menu*/
+    
+}
+
+@media (max-width: 320px){
+    /*decorados*/
+    header{
+        height: 60px;
+        background-color: rgba(184, 96, 228, 0.692);
+        
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header #logo{
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        left: 5px;
+    }
+    header .Titulo{
+        font-size: 7px;
+    }
+    /*fin de decorados*/
+    
+    /*hamburgesa*/
+    .hamburgesa{
+        margin-right: 5px;
+    }
+    .checkbtn #hambur{
+        display: inline;
+        width: 30px;
+        height: 30px;
+        margin-top: 15px;
+    }
+    .checkbtn #hambur:hover{
+        display: inline;
+        width: 30px;
+        height: 30px;
         margin-top: 15px;
     }
 
@@ -230,9 +320,26 @@ header #logo{
 @media (max-width: 768px){
     .section1 h3{
         font-size: 18px;
+        margin: 7px;
+        padding: 7px;
     }
     .section1 p{
         font-size: 12px;
+        margin: 7px;
+        padding: 7px;
+    }
+}
+
+@media (max-width: 768px){
+    .section1 h3{
+        font-size: 12px;
+        margin: 5px;
+        padding: 5px;
+    }
+    .section1 p{
+        font-size: 8px;
+        margin: 5px;
+        padding: 5px;
     }
 }
 /*Fin section1*/
@@ -276,6 +383,20 @@ header #logo{
     }
 }
 
+@media (max-width: 320px){
+    .info h3{
+        font-size: 12px;
+    }
+    .info p{
+        font-size: 8px;
+    }
+    .info2{
+        margin-bottom: 0px;
+    }
+    .info3{
+        margin-top: 0px;
+    }
+}
 /*Fin lista*/
 
 
@@ -345,6 +466,34 @@ header #logo{
         width: 250px;
         height: 150px;
     }
+    .clas li{    
+        margin: 12px;
+        padding: 7px;
+        width: 300px;
+        border: 3px violet solid;
+    }
+}
+
+@media (max-width: 320px){
+    .section2 h2{
+        font-size: 16px;
+    }
+    .section2 h3{
+        font-size: 12px;
+    }
+    .section2 p{
+        font-size: 8px;
+    }
+    .section2 img{
+        width: 150px;
+        height: 100px;
+    }
+    .clas li{    
+        margin: 8px;
+        padding: 5px;
+        width: 250px;
+        border: 1px violet solid;
+    }
 }
 /*fin estilos*/
 
@@ -396,6 +545,28 @@ header #logo{
     .section3 img{
         width: 250px;
         height: 150px;
+    }
+}
+
+@media (max-width: 320px){
+    .section3 h2{
+        font-size: 16px;
+    }
+    .section3 h3{
+        font-size: 12px;
+    }
+    .section3 p{
+        font-size: 8px;
+    }
+    .section3 img{
+        width: 150px;
+        height: 100px;
+    }
+    .clas li{    
+        margin: 8px;
+        padding: 5px;
+        width: 250px;
+        border: 1px violet solid;
     }
 }
 /*Fin evento pile*/
@@ -451,6 +622,28 @@ header #logo{
         height: 150px;
     }
 }
+
+@media (max-width: 320px){
+    .section4 h2{
+        font-size: 16px;
+    }
+    .section4 h3{
+        font-size: 12px;
+    }
+    .section4 p{
+        font-size: 8px;
+    }
+    .section4 img{
+        width: 150px;
+        height: 100px;
+    }
+    .clas li{    
+        margin: 8px;
+        padding: 5px;
+        width: 250px;
+        border: 1px violet solid;
+    }
+}
 /*Fin evento relacionado*/
 
 
@@ -479,6 +672,9 @@ header #logo{
 @media (max-width: 768px){
     footer p, a{
         font-size: 12px;
+    }
+    footer p, a{
+        font-size: 8px;
     }
 }
 /*Fin footer*/
