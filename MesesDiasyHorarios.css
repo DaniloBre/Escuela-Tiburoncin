@@ -11,13 +11,43 @@ body{
 }
 
 
+/*Menu*/
+header{
+    height: 80px;
+    background-color: rgba(184, 96, 228, 0.692);
 
+}
+
+.deco{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+header #logo{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    left: 20px;
+    
+}
+
+.Titulo{
+    margin: 20px;
+}
+/*fin de decorados*/
+
+/*Titulo de esta pagina*/
 .elija{
     margin: 10px;
     padding: 10px;
     background-color: rgb(185, 255, 115);
     font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
+/*Fin de titulo de esta pagina*/
+/*Fin de menu*/
+
+
 h2{
     margin: 10px;
     padding: 10px;
@@ -49,16 +79,7 @@ p{
     padding: 10px;
     font-family: 'Roboto Mono', monospace;
 }
-a{
-    margin: 10px;
-    padding: 10px;
-    background-color: rgb(157, 231, 83);
-    border-radius: 15%;
-}
-a:hover{
-    background-color: rgb(71, 163, 71);
-    border-radius: 30%;
-}
+
 
 form{
     margin: 10px;
