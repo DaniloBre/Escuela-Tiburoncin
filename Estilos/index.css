@@ -1,0 +1,680 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./Imagenes/fondoagua.jpg);
+    width: 100%;
+    height: 80vh;
+    margin: 10px auto;
+
+
+}
+
+
+h1{
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+h2, h3{
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+h2{
+    margin: 15px;
+}
+
+@media (max-width:768px) {
+    h2{
+        font-size: 18px;
+    }
+}
+@media (max-width:320px) {
+    h2{
+        font-size: 12px;
+    }
+}
+
+p{
+    font-family: 'Roboto Mono', monospace;
+    margin: 15px;
+}
+/*Encabezado*/
+
+#tibu{
+    grid-area: logo;
+}
+#arriba{
+    grid-area: titu;
+}
+/*Fin de encabezado*/
+
+/*Menu*/
+/*decorados*/
+header{
+    height: 80px;
+    background-color: rgba(184, 96, 228, 0.692);
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+.deco{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+header #logo{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    left: 20px;
+    
+}
+
+.Titulo{
+    margin: 20px;
+}
+/*fin de decorados*/
+
+/*Hamburgesa*/
+#check{
+    display: none;
+}
+
+.checkbtn #hambur{
+    display: none;
+    width: 60px;
+    height: 60px;
+    
+    
+}
+
+.checkbtn #hambur:hover{
+    cursor: pointer;
+    background-color: rgba(166, 46, 226, 0.692);
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+}
+/*fin de hamburgesa*/
+
+
+/*menu*/
+.barra{
+    list-style-type: none;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    margin: 12.5px;
+}
+
+
+.barra .busq{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.barra input{
+    width: 200px;
+    height: 20px;
+}
+
+.barra ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.barra li a{
+    display: block;
+    margin: 1px;
+    padding: 20px;
+    height: 15px;
+    background-color: rgb(157, 231, 83);
+    text-decoration: none;
+    border-radius: 5%;   
+}
+
+.menu li a:hover{
+    background-color: rgb(128, 221, 35);
+    border-left: solid 1px rgba(184, 96, 228, 0.692);
+    border-right: solid 1px rgba(184, 96, 228, 0.692);
+    border-radius: 10px;
+}
+/*fin de menu*/
+
+
+@media (max-width: 768px){
+    /*decorados*/
+    header{
+        height: 70px;
+        background-color: rgba(184, 96, 228, 0.692);
+        
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header #logo{
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        left: 10px;
+    }
+    header .Titulo{
+        font-size: 15px;
+    }
+    /*fin de decorados*/
+    
+    /*hamburgesa*/
+    .hamburgesa{
+        margin-right: 10px;
+    }
+    .checkbtn #hambur{
+        display: inline;
+        width: 45px;
+        height: 45px;
+        margin-top: 15px;
+    }
+    .checkbtn #hambur:hover{
+        display: inline;
+        width: 45px;
+        height: 45px;
+        margin-top: 15px;
+    }
+
+    /*fin de hamburgesa*/
+
+    /*menu*/
+    .barra{
+        position: fixed;
+        width: 270px;
+        left: -285px;
+        top: 300px;
+        background-color: rgba(184, 96, 228, 0.692);
+        text-align: center;
+
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+
+    .barra .busq{
+        margin: 10px ;
+        background-color: rgba(184, 96, 228, 0.692);
+    }
+    
+    .barra ul{
+        background-color: rgba(184, 96, 228, 0.692);
+        flex-direction: column;
+    }
+    
+    .barra li a{
+        margin: 5px;
+    }
+    
+    #hambur:checked ~ .barra{
+        left: 0px;
+
+    }
+    /*fin de menu*/
+    
+}
+
+@media (max-width: 320px){
+    /*decorados*/
+    header{
+        height: 60px;
+        background-color: rgba(184, 96, 228, 0.692);
+        
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header #logo{
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        left: 5px;
+    }
+    header .Titulo{
+        font-size: 7px;
+    }
+    /*fin de decorados*/
+    
+    /*hamburgesa*/
+    .hamburgesa{
+        margin-right: 5px;
+    }
+    .checkbtn #hambur{
+        display: inline;
+        width: 30px;
+        height: 30px;
+        margin-top: 15px;
+    }
+    .checkbtn #hambur:hover{
+        display: inline;
+        width: 30px;
+        height: 30px;
+        margin-top: 15px;
+    }
+
+    /*fin de hamburgesa*/
+
+    /*menu*/
+    .barra{
+        position: fixed;
+        width: 270px;
+        left: -285px;
+        top: 300px;
+        background-color: rgba(184, 96, 228, 0.692);
+        text-align: center;
+
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+
+    .barra .busq{
+        margin: 10px ;
+        background-color: rgba(184, 96, 228, 0.692);
+    }
+    
+    .barra ul{
+        background-color: rgba(184, 96, 228, 0.692);
+        flex-direction: column;
+    }
+    
+    .barra li a{
+        margin: 5px;
+    }
+    
+    #hambur:checked ~ .barra{
+        left: 0px;
+
+    }
+    /*fin de menu*/
+    
+}   
+
+/*Section1*/
+.section1{
+    background-color: rgba(110, 160, 161, 0.801);
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.section1 h3{
+    margin: 10px;
+    padding: 10px;
+}
+.section1 p{
+    margin: 10px;
+    padding: 10px;
+}
+
+@media (max-width: 768px){
+    .section1 h3{
+        font-size: 18px;
+        margin: 7px;
+        padding: 7px;
+    }
+    .section1 p{
+        font-size: 12px;
+        margin: 7px;
+        padding: 7px;
+    }
+}
+
+@media (max-width: 768px){
+    .section1 h3{
+        font-size: 12px;
+        margin: 5px;
+        padding: 5px;
+    }
+    .section1 p{
+        font-size: 8px;
+        margin: 5px;
+        padding: 5px;
+    }
+}
+/*Fin section1*/
+
+
+/*Lista*/
+.info{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(128, 255, 0, 0.568);
+
+    display: flex;
+    flex-direction: column;   
+}
+
+.info2{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+}
+.info3{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+}
+
+@media (max-width: 768px){
+    .info h3{
+        font-size: 18px;
+    }
+    .info p{
+        font-size: 12px;
+    }
+    .info2{
+        display: flex;
+        flex-direction: column;
+    }
+    .info3{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 320px){
+    .info h3{
+        font-size: 12px;
+    }
+    .info p{
+        font-size: 8px;
+    }
+    .info2{
+        margin-bottom: 0px;
+    }
+    .info3{
+        margin-top: 0px;
+    }
+}
+/*Fin lista*/
+
+
+/*Estilos*/
+.section2{
+    margin: 10px;
+    background-color: rgba(189, 183, 107, 0.925);
+}
+.clas{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.clas img{
+    width: 300px;
+    height: 200px;
+}
+.clas li{    
+    margin: 15px;
+    padding: 10px;
+    width: 500px;
+    border: 5px violet solid;
+    display: inline-block;
+}
+
+.crol{
+    background-color: royalblue;
+    display: inline block;
+}
+.crol p{
+    background-color: rgb(106, 134, 219);
+}
+
+.espa{
+    background-color: darkorange;
+    display: inline block;
+}
+.espa p{
+    background-color: rgb(255, 175, 78);
+}
+.pech{
+    background-color: firebrick;
+    display: inline block;
+}
+.pech p{
+    background-color: rgb(199, 78, 78);
+}
+.mari{
+    background-color: darkgreen;
+    display: inline block;
+}
+.mari p{
+    background-color: rgb(60, 160, 60);
+}
+
+@media (max-width: 768px){
+    .section2 h2{
+        font-size: 24px;
+    }
+    .section2 h3{
+        font-size: 18px;
+    }
+    .section2 p{
+        font-size: 12px;
+    }
+    .section2 img{
+        width: 250px;
+        height: 150px;
+    }
+    .clas li{    
+        margin: 12px;
+        padding: 7px;
+        width: 300px;
+        border: 3px violet solid;
+    }
+}
+
+@media (max-width: 320px){
+    .section2 h2{
+        font-size: 16px;
+    }
+    .section2 h3{
+        font-size: 12px;
+    }
+    .section2 p{
+        font-size: 8px;
+    }
+    .section2 img{
+        width: 150px;
+        height: 100px;
+    }
+    .clas li{    
+        margin: 8px;
+        padding: 5px;
+        width: 250px;
+        border: 1px violet solid;
+    }
+}
+/*fin estilos*/
+
+
+/*Evento pile*/
+.section3{
+    background-color: rgba(128, 128, 0, 0.897);
+    margin: 10px;
+}
+.comp{
+    background-color: orangered;
+    display: inline block;
+}
+.comp p{
+    background-color: rgb(255, 144, 104);
+}
+.supe{
+    background-color: indianred;
+    display: inline block;
+}
+.supe p{
+    background-color: rgb(241, 135, 135);    
+}
+.fies{
+    background-color: rgb(0, 100, 139);
+    display: inline block;
+}
+.fies p{
+    background-color: rgb(48, 147, 187);
+}
+.padr{
+    background-color: forestgreen;
+    display: inline block;
+}
+.padr p{
+    background-color: rgb(81, 201, 81);
+}
+
+@media (max-width: 768px){
+    .section3 h2{
+        font-size: 24px;
+    }
+    .section3 h3{
+        font-size: 18px;
+    }
+    .section3 p{
+        font-size: 12px;
+    }
+    .section3 img{
+        width: 250px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 320px){
+    .section3 h2{
+        font-size: 16px;
+    }
+    .section3 h3{
+        font-size: 12px;
+    }
+    .section3 p{
+        font-size: 8px;
+    }
+    .section3 img{
+        width: 150px;
+        height: 100px;
+    }
+    .clas li{    
+        margin: 8px;
+        padding: 5px;
+        width: 250px;
+        border: 1px violet solid;
+    }
+}
+/*Fin evento pile*/
+
+
+/*Evento relacionado*/
+.section4{
+    background-color: rgba(119, 136, 153, 0.884) ;
+    margin: 10px;
+}
+.exte{
+    background-color: yellowgreen;
+    display: inline block;
+}
+.exte p{
+    background-color: rgb(214, 253, 135);
+}
+.rio{
+    background-color: darkslateblue;
+    display: inline block;
+}
+.rio p{
+    background-color: rgb(126, 115, 199);
+    
+}
+.mar{
+    background-color: tomato;
+    display: inline block;
+}
+.mar p{
+    background-color: rgb(255, 152, 134);
+}
+.lago{
+    background-color: darkcyan;
+    display: inline block;
+}
+.lago p{
+    background-color: rgb(56, 211, 211);
+}
+
+@media (max-width: 768px){
+    .section4 h2{
+        font-size: 24px;
+    }
+    .section4 h3{
+        font-size: 18px;
+    }
+    .section4 p{
+        font-size: 12px;
+    }
+    .section4 img{
+        width: 250px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 320px){
+    .section4 h2{
+        font-size: 16px;
+    }
+    .section4 h3{
+        font-size: 12px;
+    }
+    .section4 p{
+        font-size: 8px;
+    }
+    .section4 img{
+        width: 150px;
+        height: 100px;
+    }
+    .clas li{    
+        margin: 8px;
+        padding: 5px;
+        width: 250px;
+        border: 1px violet solid;
+    }
+}
+/*Fin evento relacionado*/
+
+
+/*Footer*/
+.foot{
+    background-color: black;
+    margin: 10px;
+    padding: 10px;
+}
+.foot p{
+    color: wheat;
+    margin: 10px;
+    padding: 10px;
+}
+.foot a{
+    margin: 10px;
+    background-color: rgb(157, 231, 83);
+    padding: 10px;
+    border-radius: 15%;
+}
+.foot a:hover{
+    background-color: rgb(71, 163, 71);
+    border-radius: 30%;
+}
+
+@media (max-width: 768px){
+    footer p, a{
+        font-size: 12px;
+    }
+    footer p, a{
+        font-size: 8px;
+    }
+}
+/*Fin footer*/
