@@ -23,54 +23,58 @@
     <div class="olin">
 
         <header>
-            <div class="deco">
-                <!--logo-->
-                <div class="tibu">
-                    <a href="#" class="tiburon">
-                        <img src="./Imagenes/shark.png" id="logo" alt="">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <a href="#" class="tiburon">
+                            <img src="./Imagenes/shark.png" id="logo" alt="">
+                        </a>
                     </a>
-                </div>
-                <!--fin de logo-->
-                
-                <!--titulo-->
-                <div class="Titulo">
-                    <h1 id="arriba">Escuela de natacion Tiburoncin</h1>
-                </div>
-                <!--fin de titulo-->
-                
-            </div>
-    
-            <div class="navega">
-    
-                <!--menu hamburgesa-->
-                <div class="hamburgesa">
-                    <input type="checkbox" id="check">
-                    <label for="check" class="checkbtn">
-                        <i class="fas fa-bars"><img src="/Imagenes/hamburgermenu_120234.png" id="hambur"alt=""></i>
-                    </label>
-                </div>
-                    <!--fin de menu hamburgesa-->
-    
-                <nav class="barra">
-    
-                    <!--menu-->
-                    <ul class="menu">
-                        <li class="inic"><a href="./index.html" target="Inicio">Inicio</a></li>
-                        <li class="sede"><a href="./sedes.html" target="Sede">Sedes</a></li>
-                        <li class="insc"><a href="./MesesDiasyHorarios.html" target="Inscripcion">Inscripcion</a></li>
-                        <li class="cont"><a href="./contactos.html" target="Contactos y redes sociales">Contactos</a></li>
-                    </ul>
-                    <!--barra de busqueda-->
-                    <div class="busq">
-                        <input type="text" placeholder="Buscar">
-                        <div>
-                            <i class=""></i>
-                        </div>
+                    <div class="Titulo">
+                        <h1 id="arriba">Escuela de natacion Tiburoncin</h1>
                     </div>
-                    <!--fin de barra de busqueda-->
-                    <!--fin de menu-->
-                </nav>
-            </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 btn-group" role="group"">
+                            <li class="nav-item dropdown" role="toolbar">
+                                <a class="nav-link dropdown-toggle" href="#arriba" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#info">Temporadas</a></li>
+                                    <li><a class="dropdown-item" href="#section2">Practicas</a></li>
+                                    <li><a class="dropdown-item" href="#section3">Eventos</a></li>
+                                    <li><a class="dropdown-item" href="#section4">Relacionados</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown" role="toolbar">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sede</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Sede #1</a></li>
+                                    <li><a class="dropdown-item" href="#">Sede #2</a></li>
+                                    <li><a class="dropdown-item" href="#">Sede #3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown" role="toolbar">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Inscripcion</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Invierno</a></li>
+                                    <li><a class="dropdown-item" href="#">Verano</a></li>
+                                    <li><a class="dropdown-item" href="#">Colonia</a></li>
+                                    <li><a class="dropdown-item" href="#">Equipo</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item" role="toolbar">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+              </nav>
             
         </header>
 
@@ -87,7 +91,7 @@
             <!--Indicaciones de las temporadas de la pileta y extras relacionados-->
 
             <h2>Organizacion de las temporadas de la pileta y mas</h2>
-            <ul class="info">
+            <ul id="info">
                 <section class="info2">
                     <li class="invi">
                         <h3>Pileta de invierno</h3>
@@ -118,7 +122,7 @@
 
             <!--Estilos a realisar en la pileta-->
 
-            <section class="section2">
+            <section id="section2">
                 <h2>Practicas a realizar</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, non autem accusamus aperiam ad pariatur consectetur, in repellendus sed magni voluptas corporis ullam rerum eveniet aliquid quas cumque nihil natus.</p>
                 <ul class="clas">
@@ -150,7 +154,7 @@
 
             <!--Descripcion de las actividers secundarios del año-->
 
-            <section class="section3">
+            <section id="section3">
                 <h2>Eventos de la pileta</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam sunt repellendus consequuntur nostrum iure, laboriosam corporis error cum saepe dicta fugit autem ratione similique obcaecati quas aspernatur est quibusdam?</p>
                 <ul class="clas">
@@ -182,7 +186,7 @@
 
             <!--Descripcion de las actividers relacionadas del año-->
         
-            <section class="section4">
+            <section id="section4">
                 <h2>Eventos relacionados a la pileta</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsam sunt repellendus consequuntur nostrum iure, laboriosam corporis error cum saepe dicta fugit autem ratione similique obcaecati quas aspernatur est quibusdam?</p>
                 <ul class="clas">
@@ -219,7 +223,7 @@
 
         <footer class="foot">
             <p>Esperamos verte pronto aprendienco con nosotros todo lo que uno deve saver sobre la natacion </p>
-            <a href="#arriba">Vover al inicio</a>
+            <a href="#arriba">Vover al inicio dela pagina</a>
         </footer>
     </div>
 
