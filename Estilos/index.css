@@ -38,15 +38,7 @@ p{
     font-family: 'Roboto Mono', monospace;
     margin: 15px;
 }
-/*Encabezado*/
 
-#tibu{
-    grid-area: logo;
-}
-#arriba{
-    grid-area: titu;
-}
-/*Fin de encabezado*/
 
 /*Menu*/
 /*decorados*/

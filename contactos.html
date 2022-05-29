@@ -8,6 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./Estilos/contactos.css">
 
     <link rel="shortcut icon" href="./Imagenes/ENTlogo.ico">
@@ -20,15 +23,66 @@
 </head>
 <body>
     <header>
-        <h1>Contactos y redes sociales</h1>
-        <h2>No dudes en contactarnso en aco de cualquier consulta que tengas.</h2>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <a href="#" class="tiburon">
+                        <img src="./Imagenes/shark.png" id="logo" alt="">
+                    </a>
+                </a>
+                <div class="Titulo">
+                    <h1 id="arriba">Escuela de natacion Tiburoncin</h1>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 btn-group" role="group"">
+                        <li class="nav-item dropdown" role="toolbar">
+                            <a class="nav-link dropdown-toggle" href="./index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#info">Temporadas</a></li>
+                                <li><a class="dropdown-item" href="#section2">Practicas</a></li>
+                                <li><a class="dropdown-item" href="#section3">Eventos</a></li>
+                                <li><a class="dropdown-item" href="#section4">Relacionados</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown" role="toolbar">
+                            <a class="nav-link dropdown-toggle" href="./sedes.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sede</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Sede #1</a></li>
+                                <li><a class="dropdown-item" href="#">Sede #2</a></li>
+                                <li><a class="dropdown-item" href="#">Sede #3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown" role="toolbar">
+                            <a class="nav-link dropdown-toggle" href="./MesesDiasyHorarios.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Inscripcion</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Invierno</a></li>
+                                <li><a class="dropdown-item" href="#">Verano</a></li>
+                                <li><a class="dropdown-item" href="#">Colonia</a></li>
+                                <li><a class="dropdown-item" href="#">Equipo</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item" role="toolbar">
+                            <a class="nav-link" href="./contactos.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
-
+        <h2>Contactos y redes sociales</h2>
+        <h3>No dudes en contactarnso en aco de cualquier consulta que tengas.</h3>
         <!--Redes sociales y contactos-->
         <section>
-            <h3>A continuacion dejatremos las dsitintas redes sociales en las que estamos precentes y te puedes comunicar con nosotros</h3>
+            <h4>A continuacion dejatremos las dsitintas redes sociales en las que estamos precentes y te puedes comunicar con nosotros</h4>
             <img src="./Imagenes/Logofacebook.jpg" alt="Logo de Facebook" width="25">
             <a href="">@tiburoncinFB</a>
             
@@ -65,7 +119,7 @@
         <section>
             <p>No te pierdas nuestro canal de youtube donde subrimos las actividades y eventos que tenemos preparado para ustedes.</p>
             <img src="./Imagenes/Logoyoutube.jpg" alt="YouTube" width="100">
-            <a href="">YouTube</a>
+            <a href="https://www.youtube.com">YouTube</a>
         </section>
         <br>
         <hr>
