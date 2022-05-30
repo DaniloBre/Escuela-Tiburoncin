@@ -12,16 +12,20 @@ body{
 
 
 /*Menu*/
-header{
+nav{
+
+    margin-top: 10px;
     height: 80px;
     background-color: rgba(184, 96, 228, 0.692);
 
 }
 
-.deco{
-    display: flex;
-    justify-content: space-between;
-    
+.btn-group{
+    background-color: rgb(157, 231, 83);
+}
+.btn-group li:hover{
+    background-color: rgb(128, 221, 35);
+    border-radius: 20%;
 }
 
 header #logo{
@@ -33,7 +37,7 @@ header #logo{
 }
 
 .Titulo{
-    margin: 20px;
+    margin: 10px;
 }
 /*fin de decorados*/
 
@@ -59,19 +63,12 @@ main{
     padding: 10px;
     background-color: rgba(127, 255, 212, 0.555);
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2) 1fr;
-    grid-template-areas: 
-    "section section"
-    "inve vera"
-    "colo equi";
 }
 
 section{
     margin: 10px;
     padding: 10px;
-    grid-area: section;
+
 }
 
 p{
@@ -124,22 +121,26 @@ div input{
     padding: 10px;
 }
 
+fieldset{
+    color: black;
+
+}
 /*Espacio de formularios*/
 .inve{
     background-color: darkcyan;
-    grid-area: inve;
+
 }
 .vera{
     background-color: darkkhaki;
-    grid-area: vera;
+
 }
 .colo{
     background-color: darksalmon;
-    grid-area: colo;
+
 }
 .equi{
     background-color: rgb(209, 87, 87);
-    grid-area: equi;
+
 }
 /*Fin de espacio de formularios*/
 

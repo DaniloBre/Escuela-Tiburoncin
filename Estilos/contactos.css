@@ -7,12 +7,14 @@ body{
 }
 
 
-header nav{
+nav{
     background-color: rgba(184, 96, 228, 0.692);
+    margin-top: 10px;
+    height: 112px
 }
 
-h1{
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
+div .container-fluid{
+    height: 96px
 }
 
 .btn-group{
@@ -32,7 +34,9 @@ header #logo{
 }
 
 .Titulo{
-    margin: 20px;
+    margin: 10px;
+    height: 60px;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 
 
@@ -52,6 +56,7 @@ main{
 }
 main img{
     display: block;
+    width: 50px;
     margin: 10px;
     padding: 10px;
 }
