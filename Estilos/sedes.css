@@ -8,7 +8,36 @@ body{
     width: 100%;
     height: 80vh;
 }
-h1{
+
+/*Menu*/
+/*decorados*/
+nav{
+    margin-top: 10px;
+    background-color: rgba(184, 96, 228, 0.692);
+}
+
+.btn-group{
+    background-color: rgb(157, 231, 83);
+}
+.btn-group li:hover{
+    background-color: rgb(128, 221, 35);
+    border-radius: 20%;
+}
+
+header #logo{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    left: 20px;
+    
+}
+
+.Titulo{
+    margin: 10px;
+}
+/*fin de decorados*/
+
+h2{
     margin: 10px;
     padding: 10px;
     background-color: rgb(185, 255, 115);
@@ -20,18 +49,8 @@ main{
     padding: 10px;
     background-color: aquamarine;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(6) 1fr;
-    grid-template-areas: 
-    "h3p h3p h3p"
-    "p1 p1 p1"
-    "pri pri asi"
-    "sec sec asi"
-    "ter ter asi"
-    "p p p";
 }
-h3{
+h4{
     margin: 5px;
     padding: 5px;
     font-family: 'IBM Plex Sans Arabic', sans-serif;
@@ -48,8 +67,13 @@ img{
     width: 380px;
     height: 260px;
 }
+iframe{
+    margin: 10px;
+    width: 380px;
+    height: 260px;
+}
 
-h2{
+h3{
     margin: 5px;
     padding: 5px;
     font-family: 'IBM Plex Sans Arabic', sans-serif;
@@ -58,40 +82,40 @@ p{
     margin: 5px;
     padding: 5px;
     font-family: 'Roboto Mono', monospace;
-    grid-area: p;
+
 }
-aside{
-    margin: 5px;
-    padding: 5px;
-    grid-area: asi;
-}
+
 .h3p{
     margin: 5px;
     padding: 5px;
     font-family: 'Roboto Mono', monospace;
-    grid-area: p1;
+
 }
 
 /*Piletas*/
-.pri{
+#pri{
     background-color: darkkhaki;
-    grid-area: pri;
+
 }
-.sec{
-    background-color: forestgreen;
-    grid-area: sec;
-}
-.ter{
-    background-color: coral;
-    grid-area: ter;
-}
-.pri p{
+#pri p{
     background-color: rgb(184, 182, 157);
 }
-.sec p{
+
+
+#sec{
+    background-color: forestgreen;
+
+}
+#sec p{
     background-color: rgb(127, 189, 127);
 }
-.ter p{
+
+
+#ter{
+    background-color: coral;
+
+}
+#ter p{
     background-color: rgb(255, 181, 154);
 }
 /*Fin de piletas*/
@@ -112,10 +136,10 @@ footer a{
     margin: 10px;
     background-color: rgb(157, 231, 83);
     padding: 10px;
-    border-radius: 15%;
+    border-radius: 15px;
 }
 footer a:hover{
     background-color: rgb(71, 163, 71);
-    border-radius: 30%;
+    border-radius: 30px;
 }
 /*Fin footer*/

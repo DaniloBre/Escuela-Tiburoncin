@@ -22,10 +22,8 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <a href="#" class="tiburon">
-                        <img src="./Imagenes/shark.png" id="logo" alt="">
-                    </a>
+                <a class="navbar-brand tiburon" href="#">
+                    <img src="./Imagenes/shark.png" id="logo" alt="">
                 </a>
                 <div class="Titulo">
                     <h1 id="arriba">Escuela de natacion Tiburoncin</h1>
@@ -35,32 +33,22 @@
                 </button>
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 btn-group" role="group"">
-                        <li class="nav-item dropdown" role="toolbar">
-                            <a class="nav-link dropdown-toggle" href="./index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#info">Temporadas</a></li>
-                                <li><a class="dropdown-item" href="#section2">Practicas</a></li>
-                                <li><a class="dropdown-item" href="#section3">Eventos</a></li>
-                                <li><a class="dropdown-item" href="#section4">Relacionados</a></li>
-                            </ul>
+                        <li class="nav-item" role="toolbar">
+                            <a class="nav-link" href="./index.html">Home</a>
                         </li>
-                        <li class="nav-item dropdown" role="toolbar">
-                            <a class="nav-link dropdown-toggle" href="./sedes.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sede</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Sede #1</a></li>
-                                <li><a class="dropdown-item" href="#">Sede #2</a></li>
-                                <li><a class="dropdown-item" href="#">Sede #3</a></li>
-                            </ul>
+                        <li class="nav-item" role="toolbar">
+                            <a class="nav-link" href="./sedes.html">Sedes</a>
                         </li>
                         <li class="nav-item dropdown" role="toolbar">
                             <a class="nav-link dropdown-toggle" href="./MesesDiasyHorarios.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Inscripcion</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Invierno</a></li>
-                                <li><a class="dropdown-item" href="#">Verano</a></li>
-                                <li><a class="dropdown-item" href="#">Colonia</a></li>
-                                <li><a class="dropdown-item" href="#">Equipo</a></li>
+                                <li><a class="dropdown-item" href="#inve">Invierno</a></li>
+                                <li><a class="dropdown-item" href="#vera">Verano</a></li>
+                                <li><a class="dropdown-item" href="#colo">Colonia</a></li>
+                                <li><a class="dropdown-item" href="#equi">Equipo</a></li>
                             </ul>
                         </li>
+                        
                         <li class="nav-item" role="toolbar">
                             <a class="nav-link" href="./contactos.html">Contacto</a>
                         </li>
@@ -75,19 +63,18 @@
     </header>
     
     <main>
-        <div>
-            <h2 class="elija">Elija su mes, dia y horario de preferencia!!!</h2>
-        </div>
+        
+        
         <!--Exlicacion de cmo funciona la inscripcion-->
         <section>
+            <h2 class="elija">Elija su mes, dia y horario de preferencia!!!</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum ipsum veniam perspiciatis accusamus enim quidem. Quis quos quibusdam sint voluptas magnam natus ipsam cupiditate. Quidem, quam perspiciatis. Iste, necessitatibus alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sed praesentium rem harum ratione! Impedit nemo sit minus veritatis dignissimos mollitia, fugiat rem odio distinctio perferendis excepturi labore, inventore sequi.</p>
-            <a href="/index.html">Volver a pagina principal</a>
         </section>
         <!--Exlicacion de cmo funciona la inscripcion-->
 
 
         <!--Invierno-->
-        <section class="inve">
+        <section id="inve">
             <h2>Formulario de invierno</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia nemo magnam eaque sapiente. Perferendis eligendi minima fugit, ea consequatur aliquid blanditiis officiis, commodi vitae dicta vel et, natus ullam id.</p>
             <form action="">
@@ -238,7 +225,7 @@
 
 
         <!--Verano-->
-        <section class="vera">
+        <section id="vera">
             <h2>Formulario de verano</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla perspiciatis dignissimos porro tempora temporibus, quisquam quibusdam, laboriosam aliquam hic quidem itaque aspernatur, reprehenderit in molestias repellendus ullam natus tenetur.</p>
             <form action="">
@@ -383,7 +370,7 @@
 
 
         <!--Colonia-->
-        <section class="colo">
+        <section id="colo">
             <h2>Formularo de colonia</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ut a saepe eum tempore laborum nulla veniam sint, architecto qui aut vitae fuga inventore. Rem quaerat modi voluptas quos doloribus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt fugit asperiores cumque iste architecto distinctio harum minima, facere quibusdam odio ullam dolor a. In aut tenetur porro quam necessitatibus laborum?</p>
             <form action="">
@@ -395,15 +382,15 @@
                         <input type="text" nombre="nombre">
                     </div>
                     <div>
-                        <label for="nombre">Escribe tu nombre</label>
+                        <label for="nombre">Nombre del menor</label>
                         <input type="text" nombre="nombre">
                     </div>
                     <div>
-                        <label for="apellido">Escribe tu apellido</label>
+                        <label for="apellido">Apellido del menor</label>
                         <input type="text" nombre="apellido">
                     </div>
                     <div>
-                        <label for="edad">Fecha de nacimiento</label>
+                        <label for="edad">Fecha de nacimiento del menor</label>
                         <input type="text" nombre="apellido">
                     </div>
                     <div>
@@ -490,32 +477,32 @@
 
 
         <!--Equipo-->
-        <section class="equi">
+        <section id="equi">
             <h2>Formularo de equipo</h2>
             <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad commodi quidem ea ab, velit tempore voluptas vitae rem repellat quam assumenda a exercitationem! Nihil neque doloremque delectus tempora similique unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor maiores fugit culpa, pariatur provident facere, omnis recusandae quasi excepturi facilis reiciendis placeat error perspiciatis dolorem repellat reprehenderit eligendi vero explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illum, modi distinctio quae et nihil facere error, eaque tempora ea quam, possimus maxime vel! Nam, accusamus dicta! Molestiae, error quis?</P>
             <form action="">
                 <fieldset>
-                    <legend>Formulario de equipo cometitivo</legend>
+                    <legend>Formulario de equipo competitivo</legend>
                     <!--Informacion primordial-->
                     <div>
                         <label for="nombre">Nombre del tutor</label>
-                        <input type="text" nombre="nombre">
+                        <input type="text" nombre="nombre" required>
                     </div>
                     <div>
                         <label for="nombre">Escribe tu nombre</label>
-                        <input type="text" nombre="nombre">
+                        <input type="text" nombre="nombre" required>
                     </div>
                     <div>
                         <label for="apellido">Escribe tu apellido</label>
-                        <input type="text" nombre="apellido">
+                        <input type="text" nombre="apellido" required>
                     </div>
                     <div>
                         <label for="edad">Fecha de nacimiento</label>
-                        <input type="text" nombre="apellido">
+                        <input type="text" nombre="apellido" required>
                     </div>
                     <div>
                         <label for="telefono">Escrive tu numero de telefono</label>
-                        <input type="text" nombre="numero telefonico">
+                        <input type="text" nombre="numero telefonico" required>
                     </div>
                     <div>
                         <label for="email">Escrube tu email *</label>
@@ -614,6 +601,7 @@
         <p>Gracias por completar el fomulario y elejirnos para apender natacion.
         En vreves le enviaremos un email para confirmar su solicitud</p>
         <a href="/index.html">Volver a la pagina principal</a>
+        <a href="#arriba">Volver a la inicio de la pagina</a>
     </footer>
 
 

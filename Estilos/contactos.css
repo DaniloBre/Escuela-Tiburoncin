@@ -18,8 +18,10 @@ div .container-fluid{
 }
 
 .btn-group{
+
     background-color: rgb(157, 231, 83);
 }
+
 .btn-group li:hover{
     background-color: rgb(128, 221, 35);
     border-radius: 20%;
@@ -93,11 +95,11 @@ footer a{
     margin: 10px;
     background-color: rgb(157, 231, 83);
     padding: 10px;
-    border-radius: 15%;
+    border-radius: 15px;
 }
 footer a:hover{
     background-color: rgb(71, 163, 71);
-    border-radius: 30%;
+    border-radius: 30px;
 }
 
 @media (max-width: 768px){

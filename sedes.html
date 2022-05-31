@@ -20,52 +20,93 @@
 </head>
 <body>
     <header>
-        <h1>Nuestras Sedes</h1>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand tiburon" href="#">    
+                    <img src="./Imagenes/shark.png" id="logo" alt="">
+                </a>
+                <div class="Titulo">
+                    <h1 id="arriba">Escuela de natacion Tiburoncin</h1>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 btn-group" role="group"">
+                        <li class="nav-item" role="toolbar">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown" role="toolbar">
+                            <a class="nav-link dropdown-toggle" href="./sedes.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sede</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#pri">Sede #1</a></li>
+                                <li><a class="dropdown-item" href="#sec">Sede #2</a></li>
+                                <li><a class="dropdown-item" href="#ter">Sede #3</a></li>
+                            </ul>
+                        </li>  
+                        <li class="nav-item" role="toolbar">
+                            <a class="nav-link" href="./MesesDiasyHorarios.html">Inscripcion</a>
+                        </li>
+                        <li class="nav-item" role="toolbar">
+                            <a class="nav-link" href="./contactos.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
+
+
     <main>
-        <h3>Espcificciones de las sedes</h3>
+        <h2>Nuestras Sedes</h2>
+        <h4>Espcificciones de las sedes</h4>
         <p class="h3p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores, illum animi eum obcaecati quasi asperiores architecto doloribus magni ullam voluptas dolorum facilis adipisci, quidem quam reprehenderit quae similique iure! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut dolorum facere explicabo repellat, inventore placeat magnam dolor enim eius? Nam, harum ab voluptates magni sint similique ex delectus distinctio pariatur!</p>
 
         <!--Primera pile-->
-        <section class="pri">
-            <h2>Sede N*1</h2>
+        <section id="pri">
+            <h3>Sede N*1</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt eveniet libero deleniti ratione quas eaque, eligendi placeat quisquam deserunt aliquam eius minima adipisci rerum, iure, ullam quia velit earum ducimus!</p>
             <img src="./Imagenes/Pileta1.jpg" alt="Pileta">
             <img src="./Imagenes/Vestuario1.jpg" alt="vestuario">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.776677941856!2d-58.490633636478364!3d-34.564862475777865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3afe7b62294d2b95!2sCLUB%20SOCIAL%20Y%20DEPORTIVO%20PINOCHO!5e0!3m2!1ses!2sar!4v1653940400908!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
         <!--Fin de primera pile-->
 
 
         <!--Segunda pile-->
-        <section class="sec">
-            <h2>Sede N*2</h2>
+        <section id="sec">
+            <h3>Sede N*2</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ipsa consectetur veniam voluptatem iure facere officia quod velit? Eaque minima, et natus voluptatibus laborum sit? Reprehenderit sint eveniet nostrum. Repellat.</p>
             <img src="./Imagenes/pileta2.jpg" alt="Pileta">
             <img src="./Imagenes/vestuario2.jpg" alt="Vestuario">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6569.8617134993165!2d-58.49610534270067!3d-34.58061604997539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2300bc3090172189!2sUrquiza%20Tenis%20Club!5e0!3m2!1ses!2sar!4v1653940741509!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
         <!--Fin de segunda pile-->
         
         
         <!--Tercera pile-->
-        <section class="ter">
-            <h2>Sede N*3</h2>
+        <section id="ter">
+            <h3>Sede N*3</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, blanditiis quisquam laborum earum ratione quae omnis perspiciatis explicabo voluptatibus quos temporibus vero dolores sit laboriosam eaque repudiandae cupiditate odit praesentium.</p>
             <img src="./Imagenes/pileta3.jpg" alt="Pileta">
             <img src="./Imagenes/vestuario3.jpg" alt="Vestuario">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.3042581401562!2d-58.484523564146166!3d-34.588771045559135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6142f77bf1d%3A0xa08f1c0fad91da16!2sClub%20Arquitectura!5e0!3m2!1ses!2sar!4v1653940846427!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
         <!--Fin de tercera pile-->
 
-        <aside>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa autem cum a nam excepturi eaque corporis dicta. Sint officiis adipisci saepe itaque odit sapiente, qui provident, sunt unde maiores est. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, quae eum quaerat corporis nobis et repellendus ipsum nam inventore tempore culpa voluptas modi dolore officia quod voluptatibus numquam. Aperiam, asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, magni quod minus suscipit earum, veniam ullam libero doloremque cum quam quia dignissimos quaerat dolorum modi enim corrupti explicabo at adipisci.</aside>
 
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aliquam praesentium soluta dicta libero pariatur recusandae optio sapiente necessitatibus modi. Sapiente accusantium ad tenetur quisquam libero nulla, commodi quas blanditiis.</p>
-
-
 
     </main>
 
     <footer>
         <p>Apriete aqui para volver al inicio</p>
-        <a href="/index.html">Volver al inicio</a>
+        <a href="/index.html">Volver al pagina principal</a>
+        <a href="#arriba">Volver a la inicio de la pagina</a>
     </footer>
 
 
